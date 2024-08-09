@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clock{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: 20rem;
+}
+.circle{
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid gray;
+}
+.hour-tick{
+    position: absolute;
+    bottom: 50%;
+    height: 5.5rem;
+    width: 0.5rem;
+    border-radius: 4px;
+    background-color: black;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+.minute-tick{
+    position: absolute;
+    bottom: 50%;
+    height: 7.5rem;
+    width: 0.5rem;
+    border-radius: 4px;
+    background-color: rgb(255, 0, 0);
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+.second-tick{
+    position: absolute;
+    bottom: 50%;
+    height: 7.5rem;
+    width: 0.2rem;
+    border-radius: 4px;
+    background-color: rgb(112, 112, 112);
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
